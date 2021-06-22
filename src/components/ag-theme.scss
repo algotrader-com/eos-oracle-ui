@@ -1,0 +1,20 @@
+@import "~ag-grid-community/src/styles/ag-grid.scss";
+@import "~ag-grid-community/src/styles/ag-theme-material/sass/ag-theme-material-mixin";
+@import '../vars.scss';
+
+.ag-theme-material {
+    @include ag-theme-material((
+        header-foreground-color: var(--primary-color),
+        secondary-foreground-color: var(--primary-color),
+        header-background-color: var(--workspace-background),
+
+        header-cell-hover-background-color: var(--secondary-color),
+        odd-row-background-color: var(--odd-row-color),
+        row-hover-color: var(--active-row-color),
+
+        borders: true,
+        border-color: var(--component-background),
+
+        font-size: var(--body-font-size),
+    ));
+}

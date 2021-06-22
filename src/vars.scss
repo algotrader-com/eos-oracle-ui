@@ -1,0 +1,19 @@
+@font-face { font-family: JosefinSans; src: url('./resources/fonts/JosefinSans-VariableFont_wght.ttf'); } 
+
+:root {
+    --font-family: 'JosefinSans', sans-serif;
+    --caption-font-size: 12px;
+    --body-font-size: 16px;
+    --subtitle-font-size: 20px;
+    --title-font-size: 24px;
+    --heading-font-size: 36px;
+
+    --workspace-background: #307FE2;
+    --component-background: #fff;
+    --primary-color: #fff;
+    --active-color: #C13951;
+    --secondary-color: #071D49;
+    --odd-row-color: rgba(0, 0, 0, 0.08);
+    --active-row-color: rgba(0, 0, 0, 0.54);
+    --sidebar-width: 300px;
+  }

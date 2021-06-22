@@ -1,0 +1,36 @@
+@import '../vars.scss';
+
+.sidebar {
+    min-height: 100%;
+    background: var(--workspace-background);
+    color: var(--primary-color);
+    padding-top: 128px;
+    display: flex;
+    flex-direction: column;
+    min-width: var(--sidebar-width);
+}
+.sidebar > .link {
+    font-size: var(--subtitle-font-size);
+    background: var(--workspace-background);
+    color: var(--primary-color);
+    height: 50px;
+    display: flex;
+    align-items: baseline;
+    padding: 10px 45px 0 45px;
+    margin: 12px 0;
+}
+.sidebar > .link > h2 {
+    margin: 0;
+}
+.sidebar > .link > * {
+    color: var(--primary-color);
+    margin-right: 30px;
+}
+.sidebar > .link:hover > * {
+    color: var(--active-color);
+    text-decoration: underline;
+}
+.sidebar > .activeLink > * {
+    color: var(--active-color);
+    text-decoration: underline;
+}
