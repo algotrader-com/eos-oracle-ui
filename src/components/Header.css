@@ -1,0 +1,12 @@
+.header {
+    background: #000;
+    height: 64px;
+    padding-left: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    color: #fff;
+    margin: 0;
+}

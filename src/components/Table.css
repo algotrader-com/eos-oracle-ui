@@ -1,0 +1,8 @@
+.table {
+    width: 100%;
+    height: calc(100% - 25px - 3.17em);
+}
+
+.rightAligned {
+    text-align: right;
+}

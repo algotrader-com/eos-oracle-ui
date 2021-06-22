@@ -1,0 +1,16 @@
+@import "~ag-grid-community/src/styles/ag-grid.scss";
+@import "~ag-grid-community/src/styles/ag-theme-material/sass/ag-theme-material-mixin";
+
+.ag-theme-material {
+    @include ag-theme-material((
+        header-foreground-color: #fff,
+        secondary-foreground-color: #fff,
+        header-background-color: #000,
+
+        header-cell-hover-background-color: #424242,
+        odd-row-background-color: #e0e0e0,
+
+        borders: true,
+        border-color: #fff,
+    ));
+}
