@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { RouteComponentProps } from "react-router";
 import { securityTypesMap } from "../constants/securityTypesMap";
 import Table from "./Table";
-import './TableContainer.css';
+import './TableContainer.scss';
 
 
 

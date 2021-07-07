@@ -3,7 +3,7 @@ import moment from 'moment';
 import { useContext, useEffect, useState } from 'react';
 import { fetchPrices, fetchSecurities } from '../api/restApiUtils';
 import { Price, Security, Error, GridRow, PriceObj } from '../domain/domain';
-import './Table.css';
+import './Table.scss';
 import './ag-theme.scss';
 import classNames from 'classnames';
 import { ColDef, GridApi, GridReadyEvent, ICellRendererParams } from 'ag-grid-community';

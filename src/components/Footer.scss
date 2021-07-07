@@ -1,0 +1,41 @@
+@import '../vars.scss';
+
+.footer {
+    background: var(--workspace-background);
+    height: 48px;
+    width: 100%;
+    display: flex;
+}
+
+.placeholder {
+    height: 100%;
+    width: var(--sidebar-width);
+}
+
+.links {
+    color: var(--primary-color);
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a + a {
+        margin-left: 40px;
+    }
+}
+
+.footer-title {
+    font-size: var(--body-font-size);
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.copyright {
+    position: absolute;
+    right: 20px;
+    font-size: var(--caption-font-size);
+    color: var(--primary-color);
+}
+
+.copyright > a {
+    color: var(--primary-color);
+}

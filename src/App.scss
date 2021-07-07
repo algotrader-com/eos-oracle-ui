@@ -1,0 +1,5 @@
+@import './vars.scss';
+
+html * {
+  font-family: var(--font-family);
+}

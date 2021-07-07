@@ -1,19 +1,20 @@
 
 import { RouteComponentProps } from 'react-router';
 import algotrader from '../resources/images/algotrader.svg';
-import eosio from '../resources/images/eosio.svg';
-import './Home.css';
+import cross from '../resources/images/cross.png';
+import eos from '../resources/images/EOS.png';
+import './Home.scss';
 
 export default function Home(props: RouteComponentProps) {
     return (
         <div className="home">
-            <h1>EOSIO Market Data Oracle</h1>
             <div className="images">
-                <img src={algotrader} alt="AlgoTrader" width={230} />
-                <img src={eosio} alt="EOSIO" width={125} />
+                <img src={algotrader} alt="AlgoTrader" width={270} />
+                <img src={cross} width={23} />
+                <img src={eos} alt="EOS" width={190} />
             </div>
-            <h4>The Market Data Oracle provides live market data for selected</h4>
-            <h4>instruments free of charge through the EOSIO blockchain</h4>
+            <h1>Connecting EOS To Real-World Data</h1>
+            <h4>The EOSIO Market Data Oracle provides live market data for selected instruments <br />through the EOS blockchain. An open-source solution to create & delete<br />securities and to set and get prices based on the REST API.</h4>
             <h5 className='postscript'>
                 {"The full source of the "}
                 <a href="https://github.com/algotrader-com/eos-oracle-contract" target="_blank" rel="noreferrer">EOSIO Smart Contract</a>
@@ -21,10 +22,9 @@ export default function Home(props: RouteComponentProps) {
                 <a href="https://github.com/algotrader-com/eos-oracle-api" target="_blank" rel="noreferrer">REST API</a>
                 {" and the "}
                 <a href="https://github.com/algotrader-com/eos-oracle-ui" target="_blank" rel="noreferrer">User Interface</a>
-                {" can be found on GitHub"}
-                <br />
+                {" can be found on GitHub. "}
                 {"See also the "}
-                <a href={`${window.location.origin}/api-docs`} target="_blank" rel="noreferrer">Swagger documentation</a>
+                <a href={`${window.location.origin}/api-docs`} target="_blank" rel="noreferrer">Swagger documentation</a>{"."}
             </h5>
         </div>
     )

@@ -3,7 +3,7 @@ import { Redirect, Route, Switch } from 'react-router';
 import { StoreContext } from '../constants/store';
 import { SecurityType } from '../domain/domain';
 import Home from './Home';
-import './Main.css';
+import './Main.scss';
 import TableContainer from './TableContainer';
 
 export default function Main() {

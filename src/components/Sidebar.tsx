@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import './Sidebar.css';
+import './Sidebar.scss';
 import { useContext } from 'react';
 import { SecurityType } from '../domain/domain';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -18,7 +18,7 @@ export default function Sidebar() {
             key={index}
         >
             <FontAwesomeIcon icon={securityTypesMap[Object.keys(securityType)[0] as keyof typeof securityTypesMap].icon} />
-            <h2>{securityTypesMap[Object.keys(securityType)[0] as keyof typeof securityTypesMap].name}</h2>
+            <p>{securityTypesMap[Object.keys(securityType)[0] as keyof typeof securityTypesMap].name}</p>
         </NavLink>)
     }
 
@@ -26,7 +26,7 @@ export default function Sidebar() {
         <span className="sidebar">
             <NavLink to='/home' className='link' activeClassName='activeLink'>
                 <FontAwesomeIcon icon={faHome} />
-                <h2>Home</h2>
+                <p>HOME</p>
             </NavLink>
             {renderNavLinks(state.securityTypes)}
         </span>
